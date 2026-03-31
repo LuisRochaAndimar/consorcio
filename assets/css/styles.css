@@ -1,0 +1,95 @@
+/* VARIABLES MANUAL DE MARCA CONSORCIO ANDINO */
+:root {
+    --ca-rojo: #e52421;
+    --ca-verde: #4aaf4d;
+    --ca-negro: #1d1d1b;
+    --ca-gris-fondo: #f8f9fa;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: var(--ca-negro);
+}
+
+/* NAVBAR SÓLIDA */
+.navbar {
+    background-color: var(--ca-negro) !important;
+    border-bottom: 4px solid var(--ca-rojo);
+    padding: 1rem 0;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--ca-rojo) !important;
+}
+
+/* HERO CON FILTRO PARA LECTURA CLARA */
+.hero-ca {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../img/flota/bus-hero.jpg'); /* Asegúrate de tener la imagen en la carpeta */
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.text-danger-ca { color: var(--ca-rojo) !important; }
+
+/* BOTON SECUNDARIO HERO */
+.btn-empresa-ca {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0.6rem;
+    transition: all 0.25s ease;
+}
+
+.btn-empresa-ca:hover,
+.btn-empresa-ca:focus {
+    background-color: #ffffff;
+    color: var(--ca-negro);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* SECCIONES */
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--ca-rojo);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* CARDS DE ENLACES EXTERNOS */
+.card-external {
+    border: none;
+    border-top: 5px solid var(--ca-rojo);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background-color: var(--ca-gris-fondo);
+    transition: 0.3s;
+}
+
+.card-external:hover {
+    transform: translateY(-5px);
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--ca-negro);
+    color: white;
+    padding: 3rem 0;
+    border-top: 5px solid var(--ca-rojo);
+}
