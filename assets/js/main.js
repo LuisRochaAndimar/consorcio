@@ -16,15 +16,24 @@ document.addEventListener("DOMContentLoaded", () => {
         loadComponent('header-placeholder', './includes/header.html'),
         loadComponent('footer-placeholder', './includes/footer.html')
     ]).then(() => {
-        // Mark current page in navbar
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        // --- LÓGICA DE SUBRAYADO MEJORADA ---
+        // Obtenemos la página actual quitando la barra inicial y la extensión .html
+        let path = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPage = path.replace('.html', '');
+
         document.querySelectorAll('#navMain .nav-link').forEach(link => {
             const href = link.getAttribute('href');
-            if (href === currentPage) {
-                link.classList.add('ca-nav-active');
-                link.setAttribute('aria-current', 'page');
+            if (href) {
+                // Quitamos el .html del href para comparar "manzanas con manzanas"
+                const linkPage = href.replace('.html', '');
+                
+                if (linkPage === currentPage) {
+                    link.classList.add('ca-nav-active');
+                    link.setAttribute('aria-current', 'page');
+                }
             }
         });
+        // --- FIN LÓGICA DE SUBRAYADO ---
 
         // Initialize AOS only if the library is available
         if (window.AOS) {
