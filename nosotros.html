@@ -3,52 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | Consorcio Andino</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Historia | Consorcio Andino</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <div id="header-placeholder"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">CONSORCIO <span class="text-danger-ca">ANDINO</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparencia</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <main>
+        <section class="py-5 mt-5 bg-tech-gradient">
+            <div class="container py-5">
+                <div class="ca-section-head text-center mb-5" data-aos="fade-down">
+                    <h1 class="ca-section-title display-5 fw-bold text-gradient">Nuestra Historia</h1>
+                    <p class="ca-section-subtitle lead text-secondary">Experiencia operativa con una mirada moderna del transporte.</p>
+                </div>
 
-    <section class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-5">Nuestra Identidad</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="p-4 border-start border-danger border-5 bg-light">
-                        <h3 class="fw-bold">Misión</h3>
-                        <p class="mb-0">Brindar soluciones de transporte de personas para la industria minera, garantizando servicios seguros, puntuales y eficientes.</p>
+                <div class="row position-relative">
+                    <div class="col-12">
+                        <div class="glass-panel p-5 rounded-4 border-start border-4 border-danger position-relative" data-aos="fade-right">
+                            <div class="position-absolute top-0 start-0 translate-middle ms-1 mt-5">
+                                <i class="bi bi-circle-fill text-danger fs-4"></i>
+                            </div>
+                            <h3 class="text-white fw-bold mb-3">1951: Los Inicios</h3>
+                            <p class="text-secondary mb-0">Nuestra trayectoria comenzó trasladando a los contratistas del campamento Saladillo, antes de operar con Codelco División Andina.</p>
+                        </div>
+                    
+                        <div class="glass-panel p-5 rounded-4 border-start border-4 border-danger position-relative mt-4" data-aos="fade-right" data-aos-delay="100">
+                            <div class="position-absolute top-0 start-0 translate-middle ms-1 mt-5">
+                                <i class="bi bi-circle-fill text-danger fs-4"></i>
+                            </div>
+                            <h3 class="text-white fw-bold mb-3">Evolución y Adaptación</h3>
+                            <p class="text-secondary mb-0">A lo largo de los años pasamos por diversas etapas: Transportes Cordillera, Servicios Industriales Minardi y Buses JM.</p>
+                        </div>
+
+                        <div class="glass-panel p-5 rounded-4 border-start border-4 border-success position-relative mt-4" data-aos="fade-right" data-aos-delay="200">
+                            <div class="position-absolute top-0 start-0 translate-middle ms-1 mt-5">
+                                <i class="bi bi-circle-fill text-success fs-4"></i>
+                            </div>
+                            <h3 class="text-white fw-bold mb-3">2022: Consolidación</h3>
+                            <p class="text-secondary mb-0">Nos consolidamos como Consorcio Andino, nacida como razón social exclusiva para Codelco División Andina, operando en mina rajo, subterránea, Huechún y sectores aledaños.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-4 border-start border-success border-5 bg-light">
-                        <h3 class="fw-bold">Visión</h3>
-                        <p class="mb-0">Ser la mejor empresa de transporte de pasajeros para la industria minera en Chile, reconocida por su electromovilidad y excelencia operacional.</p>
+            </div>
+        </section>
+    
+        <section class="ca-testimonials-section py-5">
+            <div class="container py-5">
+                <div class="ca-section-head text-center mb-5" data-aos="fade-up">
+                    <h2 class="ca-section-title display-6 fw-bold text-gradient">Relatos y Opiniones</h2>
+                    <p class="ca-section-subtitle lead text-secondary mb-0">Testimonios de trabajadores y clientes sobre su experiencia con Consorcio Andino.</p>
+                </div>
+    
+                <div class="row g-4">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                        <article class="ca-testimonial-card glass-panel p-4 rounded-4 h-100">
+                            <div class="ca-testimonial-photo-placeholder rounded-3 d-flex align-items-center justify-content-center mb-3">
+                                <span class="small fw-bold text-secondary text-uppercase">imagen trabajador</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Operador de Transporte</h3>
+                            <p class="text-secondary mb-0">"Aqui podra incorporarse el relato de un trabajador sobre seguridad, ambiente laboral y desarrollo profesional."</p>
+                        </article>
+                    </div>
+    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <article class="ca-testimonial-card glass-panel p-4 rounded-4 h-100">
+                            <div class="ca-testimonial-photo-placeholder rounded-3 d-flex align-items-center justify-content-center mb-3">
+                                <span class="small fw-bold text-secondary text-uppercase">imagen cliente</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Cliente Minero</h3>
+                            <p class="text-secondary mb-0">"Aqui podra integrarse la opinion de un cliente respecto a puntualidad, continuidad operativa y calidad del servicio."</p>
+                        </article>
+                    </div>
+    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                        <article class="ca-testimonial-card glass-panel p-4 rounded-4 h-100">
+                            <div class="ca-testimonial-photo-placeholder rounded-3 d-flex align-items-center justify-content-center mb-3">
+                                <span class="small fw-bold text-secondary text-uppercase">imagen trabajador</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Equipo de Faena</h3>
+                            <p class="text-secondary mb-0">"Aqui podra añadirse un testimonio sobre coordinacion en rutas exigentes y cumplimiento de estandares."</p>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer class="text-center mt-auto">
-        <div class="container"><p class="text-muted mb-0 small">© 2026 Consorcio Andino</p></div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

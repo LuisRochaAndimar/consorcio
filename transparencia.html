@@ -4,56 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transparencia | Consorcio Andino</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <div id="header-placeholder"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">CONSORCIO <span class="text-danger-ca">ANDINO</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="transparencia.html">Transparencia</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="py-5">
-        <div class="container text-center">
-            <h2 class="section-title mb-5">Transparencia Legal</h2>
-            <p class="mb-5 text-muted">Acceso directo a las plataformas de cumplimiento y normativas legales externas.</p>
-            
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-5">
-                    <div class="card card-external h-100 p-4">
-                        <h4 class="fw-bold mb-3">Protocolo Ley Karin</h4>
-                        <p class="small text-muted mb-4">Información oficial sobre prevención de acoso laboral y sexual disponible en el portal correspondiente.</p>
-                        <a href="https://url-del-sitio-legal.com" target="_blank" class="btn btn-dark fw-bold">Ir al Sitio Externo</a>
-                    </div>
-                </div>
-                
-                <div class="col-md-5">
-                    <div class="card card-external h-100 p-4">
-                        <h4 class="fw-bold mb-3">Marco Regulatorio</h4>
-                        <p class="small text-muted mb-4">Consulta las normativas de transporte y seguridad vigentes manejadas por la entidad colaboradora.</p>
-                        <a href="https://otra-url-externa.com" target="_blank" class="btn btn-dark fw-bold">Consultar Plataforma</a>
-                    </div>
+    <main>
+        <section class="ca-transparency-hero py-5 mt-5">
+            <div class="container py-5">
+                <div class="ca-section-head text-center mb-5" data-aos="fade-down">
+                    <span class="badge bg-danger mb-3 px-3 py-2 shadow-sm">Cumplimiento y Transparencia</span>
+                    <h1 class="ca-section-title display-5 fw-bold text-gradient">Información Legal y Laboral</h1>
+                    <p class="ca-section-subtitle lead text-secondary mb-0">
+                        En esta sección compartimos información relevante sobre Ley Karin y otras normas laborales aplicables.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="text-center mt-5">
-        <div class="container"><p class="text-muted mb-0 small">© 2026 Consorcio Andino</p></div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <section class="py-4 pb-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <article class="ca-legal-card glass-panel p-4 rounded-4 h-100 border-start border-danger border-4">
+                            <h3 class="fw-bold mb-3">Ley Karin</h3>
+                            <p class="text-secondary mb-3">
+                                La Ley Karin refuerza la prevencion, investigacion y sancion del acoso laboral, acoso sexual y violencia en el trabajo.
+                            </p>
+                            <p class="text-secondary mb-4">
+                                El organismo competente para orientacion y fiscalizacion en materia laboral es la Direccion del Trabajo de Chile.
+                            </p>
+                            <a href="https://www.dt.gob.cl/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-ca-primary fw-bold">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Ir a Direccion del Trabajo
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                        <article class="ca-legal-card glass-panel p-4 rounded-4 h-100 border-start border-success border-4">
+                            <h3 class="fw-bold mb-3">Normativa Laboral Complementaria</h3>
+                            <ul class="text-secondary mb-0 ca-legal-list">
+                                <li>Codigo del Trabajo y deber de proteccion del empleador.</li>
+                                <li>Protocolos internos de prevencion y canales de denuncia.</li>
+                                <li>Derechos fundamentales de las y los trabajadores.</li>
+                                <li>Medidas de resguardo, investigacion y no represalia.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
